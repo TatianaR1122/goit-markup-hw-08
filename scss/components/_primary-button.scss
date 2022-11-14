@@ -1,0 +1,24 @@
+.primary-button {
+
+    display: inline-block;
+    min-width: 216px;
+    padding: 10px 32px;
+    margin-top: 30px;
+    color: var(--background-whight);
+    background-color: var(--accent-color);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.9;
+    letter-spacing: 0.06em;
+    border: none;
+    border-radius: 4px;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--background-black);
+    }
+}
