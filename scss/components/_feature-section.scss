@@ -5,8 +5,6 @@
 
 .feature {
 
-    // width: 1200px;
-    // padding: 0 15px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -18,8 +16,7 @@
     
 @media (min-width: 480px) {
     flex-direction: row;
-}
-    
+}  
 }
 
 .feature__icon-bg {
@@ -81,5 +78,4 @@
 
         flex-basis: calc((100% - 90px) / 4);
     }
-
 }

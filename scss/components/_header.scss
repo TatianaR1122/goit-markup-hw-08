@@ -1,8 +1,14 @@
 .header {
 
-    padding-top: 24px;
-    padding-bottom: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #ECECEC;
+    align-items: center;
+
+    @media (min-width: 768px) {
+        padding-top: 26px;
+        padding-bottom: 26px;
+    }
 }
 
 .header__container {
@@ -15,7 +21,6 @@
         margin-left: 15px;
         margin-right: 15px;
     }
-    
 }
 
 .header__nav {
@@ -28,6 +33,7 @@
 }
 
 .header__burger-menu {
+    
     border: none;
     background-color: var(--background-whight);
 
@@ -35,7 +41,6 @@
     &:focus {
         fill: var(--accent-color);
     }
-    
 
     @media (min-width: 768px) {
         display: none;
@@ -76,8 +81,7 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
-    }
-    
+    }  
 }
 
 .menu__link--current {
@@ -97,20 +101,26 @@
         width: 100%;
         height: 4px;
         left: 0;
-        bottom: -32px;
+        bottom: -34px;
         background-color: var(--accent-color);
         border-radius: 2px;
+
+        @media (min-width: 768px) and (max-width: 1199px) {
+            margin-bottom: -5px;
+        }
     }
 }
 
 .contact {
+    
     display: none;
 
     @media (min-width: 768px) and(max-width:1199px) {
-        display: block;
-        align-items: center;
-            margin-left: auto;
-            row-gap: 50px;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: flex-start;
+        margin-left: auto;
     }
      @media (min-width: 1200px) {
         display: flex;
@@ -135,7 +145,6 @@
     line-height: 1.1;
     letter-spacing: 0.02em;
     text-decoration: none;
-    margin-bottom: 10px;
 
     transition-property: color;
     transition-duration: 250ms;
