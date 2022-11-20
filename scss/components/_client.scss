@@ -1,12 +1,28 @@
 .client {
 
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    // width: 100%;
     gap: 30px;
+    @media (min-width: 480px) {
+            flex-direction: row;
+        }
 }
 
 .client__item {
-
-    width: calc((100% - 150px) / 6);
+    width: 100%;
+    @media (min-width: 768px) and (max-width: 1199px) {
+    
+            flex-basis: calc((100% - 60px) / 3);
+        }
+    
+        @media (min-width: 1200px) {
+    
+            flex-basis: calc((100% - 150px) / 6);
+        }
+    // width: calc((100% - 150px) / 6);
 }
 
 .client__link {
@@ -28,4 +44,6 @@
         fill: var(--accent-color);
         border-color: var(--accent-color);
     }
+
+        
 }

@@ -1,16 +1,23 @@
 .section-images {
-
+    display: none;
     padding-top: 47px;
+
+    @media (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .section-images__foto {
-
-    display: flex;
+    display: none;
     margin-right: auto;
     margin-left: auto;
     justify-content: center;
     column-gap: 30px;
     align-items: center;
+
+    @media (min-width: 1200px) {
+        display: flex;
+    }
 }
 
 .images {
