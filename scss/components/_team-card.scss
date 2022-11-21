@@ -17,19 +17,17 @@
 
         flex-basis: calc((100% - 90px) / 4);
     }
-}
-
-.team-card__content {
+&__content {
 
     border-width: 1px;
     border-color: var(--primary-text-color);
     background: var(--background-whight);
     padding-top: 30px;
     padding-bottom: 30px;
-    width: 100%;           
+    width: 100%;
 }
 
-.team-card__title {
+&__title {
 
     color: var(--title-text-color);
     font-style: normal;
@@ -41,7 +39,7 @@
     margin-bottom: 10px;
 }
 
-.team-card__text {
+&__text {
 
     color: var(--primary-text-color);
     font-style: normal;
@@ -51,3 +49,5 @@
     text-align: center;
     letter-spacing: 0.03em;
 }
+}
+

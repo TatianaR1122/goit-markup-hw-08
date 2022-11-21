@@ -60,6 +60,10 @@ button {
 
 .section__title {
 
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    
     color: var(--title-text-color);
     font-style: normal;
     font-weight: 700;

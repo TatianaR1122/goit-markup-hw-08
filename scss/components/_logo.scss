@@ -7,14 +7,14 @@
     font-size: 26px;
     line-height: 1.2;
     text-decoration: none;
-}
+    
+&--black-piece {
 
-.logo--black-piece {
-
-    color: var(--background-black);
-}
-
-.logo--white-piece {
+        color: var(--background-black);
+    }
+&--white-piece {
 
     color: var(--background-whight);
 }
+}
+

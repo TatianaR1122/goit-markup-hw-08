@@ -19,7 +19,6 @@
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
-    
     }
    
     @media  (min-width: 1200px) {
@@ -57,7 +56,34 @@
     flex-direction: column;
 }
 
-.footer-contact__adress {
+.footer-contact {
+
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    row-gap: 9px;
+
+&__link {
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--accent-color);
+    }
+    }
+&__adress {
 
     color: var(--background-whight);
     font-style: normal;
@@ -72,43 +98,20 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     &:hover,
     &:focus {
         color: var(--accent-color);
     }
 }
-
-.footer-contact__link {
-
-    font-family: 'Roboto';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 0.6);
-
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
-    &:hover,
-    &:focus {
-        color: var(--accent-color);
-    }
 }
 
-.footer-contact {
 
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
-    row-gap: 9px;
-}
+.footer-net {
 
-.footer-net__title {
+    display: block;
+
+&__title {
 
     font-family: 'Roboto';
     font-weight: 700;
@@ -119,19 +122,12 @@
     color: var(--background-whight);
     margin-bottom: 20px;
 }
-
-.footer-net {
-
-    display: block;
-}
-
-.footer-net__list {
+&__list {
 
     display: flex;
     gap: 10px;
 }
-
-.footer-net__link {
+&__link {
 
     width: 44px;
     height: 44px;
@@ -145,10 +141,14 @@
     transition-property: background-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    
+
     &:hover,
     &:focus {
         background-color: var(--accent-color);
     }
 }
+}
+
+
+
 

@@ -9,9 +9,7 @@
         padding-top: 26px;
         padding-bottom: 26px;
     }
-}
-
-.header__container {
+&__container {
 
     display: flex;
     align-items: center;
@@ -22,8 +20,7 @@
         margin-right: 15px;
     }
 }
-
-.header__nav {
+&__nav {
 
     display: none;
 
@@ -31,9 +28,8 @@
         display: flex;
     }
 }
+&__burger-menu {
 
-.header__burger-menu {
-    
     border: none;
     background-color: var(--background-whight);
 
@@ -46,6 +42,7 @@
         display: none;
     }
 }
+}
 
 .menu {
 
@@ -53,15 +50,13 @@
     align-items: center;
     column-gap: 50px;
     margin-left: 91px;
-}
 
-.menu__nav-link {
+&__nav-link {
 
-    position: relative;
-    display: block;
-}
-
-.menu__link {
+        position: relative;
+        display: block;
+    }
+&__link {
 
     display: flex;
     align-items: center;
@@ -81,34 +76,34 @@
     &:hover,
     &:focus {
         color: var(--accent-color);
-    }  
-}
-
-.menu__link--current {
-
-    color: var(--accent-color);
-    font-style: normal;
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 1.1;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-
-    &::after {
-        position: absolute;
-        display: inline-block;
-        content: " ";
-        width: 100%;
-        height: 4px;
-        left: 0;
-        bottom: -34px;
-        background-color: var(--accent-color);
-        border-radius: 2px;
-
-        @media (min-width: 768px) and (max-width: 1199px) {
-            margin-bottom: -5px;
-        }
     }
+        &--current {
+    
+            color: var(--accent-color);
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 1.1;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+    
+            &::after {
+                position: absolute;
+                display: inline-block;
+                content: " ";
+                width: 100%;
+                height: 4px;
+                left: 0;
+                bottom: -34px;
+                background-color: var(--accent-color);
+                border-radius: 2px;
+    
+                @media (min-width: 768px) and (max-width: 1199px) {
+                    margin-bottom: -5px;
+                }
+            }
+        }
+}
 }
 
 .contact {
@@ -129,9 +124,7 @@
         margin-left: 315px;
         gap: 30px;
      }
-}
-
-.contact__link {
+&__link {
 
     display: flex;
     align-items: center;
@@ -156,3 +149,5 @@
         color: var(--accent-color);
     }
 }
+}
+

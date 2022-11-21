@@ -1,32 +1,64 @@
 .checkbox {
 
     align-items: center;
-}
 
-.checkbox__label {
+    &__label {
+    
+        display: flex;
+        justify-content: center;
+        margin-top: 20px;
+        }
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 20px;
-}
+    &__icon {
 
-.checkbox__icon {
+        display: block;
+        margin-right: 5px;
+        border: 2px solid var(--title-text-color);
+        padding: 4px 2px 3px 3px;
+        fill: var(--background-whight);
+        border-radius: 3px;
+        
+        transition-property: border-color, background-color;
+        transition-duration: 250ms;
+        transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
 
-    display: block;
-    margin-right: 5px;
-    border: 2px solid var(--title-text-color);
-    border-radius: 3px;
-    transition-property: border-color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    padding: 4px 2px 3px 3px;
-    fill: var(--background-whight);
-}
+    &__input {
 
-.checkbox__input {
+        border: none;
+    }
 
-    border: none;
+    &__accept-text {
+
+        display: block;
+        padding-right: 5px;
+        padding-left: 5px;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--primary-text-color);
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    }
+
+    &__link {
+
+        align-items: center;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 1.2;
+        letter-spacing: 0.03em;
+        color: var(--accent-color);
+
+        @media (min-width: 1200px) {
+            font-size: 14px;
+            line-height: 1.7;
+        }
+    }
 }
 
 .checkbox__input:checked+.checkbox__icon {
@@ -40,38 +72,6 @@
 .checkbox__input:focus+.checkbox__icon {
 
     border-color: var(--accent-color);
-}
-
-.checkbox__accept-text {
-
-    display: block;
-    padding-right: 5px;
-    padding-left: 5px;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--primary-text-color);
-    
-    @media (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.7;
-    }
-}
-
-.checkbox__link {
-
-    align-items: center;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 1.2;
-    letter-spacing: 0.03em;
-    color: var(--accent-color);
-    
-    @media (min-width: 1200px) {
-        font-size: 14px;
-        line-height: 1.7;
-        }
 }
 
 .send-button {
