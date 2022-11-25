@@ -51,10 +51,12 @@
 
     <main>
         <section class="hero">
-            <div class="container">
-                <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
-                <button data-modal-open class="primary-button" type="button">Замовити послугу</button>
-            </div>
+            <div class="hero__overlay">
+                <div class="container">
+                    <h1 class="hero__title">Ефективні рішення для вашого бізнесу</h1>
+                    <button data-modal-open class="primary-button" type="button">Замовити послугу</button>
+                </div>
+            </div>  
         </section>
 
             <!-- h2 hidden -->
@@ -397,31 +399,37 @@
      </footer>
 
      <div class="mobile-menu js-menu-container">
-        
-            <button class="mobile-menu__close-button js-close-menu">
-                <svg class="close-button__icon" width="19px" height="19px">
-                    <use href="./images/sprite22.svg#icon-close"></use>
-                </svg>
-            </button>
-            <nav class="mobile-menu__nav">
-                <ul class="mobile-menu__linked">
-                    <li class=""><a class="mobile-menu__link mobile-menu__link--current" href="">Студія</a></li>
-                    <li class=""><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
-                    <li class=""><a class="mobile-menu__link" href="">Контакти</a></li>
-                </ul>
-                <ul>
-                    <li><a class="mobile-menu__pfone" href="">+38 096 111 11 11</a></li>
-                    <li><a class="mobile-menu__mail" href="">info@devstudio.com</a></li>
-                </ul>
-                <ul class="mobile-menu__net">
-                    <li><a class="mobile-menu__netlist " href="">Instagram</a></li>
-                    <li><a class="mobile-menu__netlist" href="">Twitter</a></li>
-                    <li><a class="mobile-menu__netlist" href="">Facebook</a></li>
-                    <li><a class="mobile-menu__netlist" href="">LinkedIn</a></li>
-                </ul>
-            </nav>
-
-        
+       <div class="mobile-menu__wrap">
+        <button class="mobile-menu__button js-close-menu">
+            <svg class="close-button__icon" width="40px" height="40px">
+                <use href="./images/sprite22.svg#icon-close"></use>
+            </svg>
+        </button>
+        <nav class="mobile-menu__nav">
+            <ul class="mobile-menu__linked">
+                <li class=""><a class="mobile-menu__link mobile-menu__link--current" href="">Студія</a></li>
+                <li class=""><a class="mobile-menu__link" href="./portfolio.html">Портфоліо</a></li>
+                <li class=""><a class="mobile-menu__link" href="">Контакти</a></li>
+            </ul>
+            <ul>
+                <li><a class="mobile-menu__pfone" href="">+38 096 111 11 11</a></li>
+                <li><a class="mobile-menu__mail" href="">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mobile-menu__net">
+                <li><a class="mobile-menu__netlist " href="">Instagram</a>
+                    <span class="mobile-menu__netline"></span>
+                </li>
+                <li><a class="mobile-menu__netlist" href="">Twitter</a>
+                    <span class="mobile-menu__netline"></span>
+                </li>
+                <li><a class="mobile-menu__netlist" href="">Facebook</a>
+                    <span class="mobile-menu__netline"></span>
+                </li>
+                <li><a class="mobile-menu__netlist" href="">LinkedIn</a>
+                </li>
+            </ul>
+        </nav>
+       </div>  
      </div>
 
     <div data-modal class="backdrop is-hidden">

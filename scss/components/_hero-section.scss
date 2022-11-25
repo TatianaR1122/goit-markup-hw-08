@@ -1,72 +1,106 @@
 .hero {
-
-    max-width: 1600px;
-    background-color: var(--footer-background);
-    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), 
-                url('../images/hero-mobile-1x.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    text-align: center;
-    margin: 0 auto;
-    padding: 118px 0;
-
-    @media (min-width: 1200px) {
-        padding: 200px 0;
-    }
+text-align: center;
+    &__title {
     
-    @media (min-width: 1200px) {
+            color: var(--background-whight);
+            font-style: normal;
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.6;
+            max-width: 696px;
+            margin: 0 auto;
+            // text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin-bottom: 30px;
+            margin-left: auto;
+            margin-right: auto;
+    
+            @media (min-width: 1200px) {
+                font-size: 44px;
+                line-height: 1.4;
+            }
+            @media (min-width: 768px) and (max-width: 1199px) {
+                width: 360px;
+            }
+        }
+    &__overlay {
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 480px;
+        width: 100%;
+        background-color: var(--footer-background);
+        background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+            url('../images/hero-mobile-1x.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        margin: 0 auto;
+        padding: 118px 0;
+
+        @media (min-width: 480px) {
+                width: 480px;
+                margin: 0 auto;
+            }
+        
+        @media (min-width: 768px) {
+                width: 768px;
+            }
+        
+        @media (min-width: 1200px) {
+                width: 1200px;
+            }
+
+        @media (min-width: 1200px) {
+            padding: 200px 0;
             height: 600px;
         }
-    
-    @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
-        & {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero-mobile-2x.jpg');
+
+        @media (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-mobile-2x.jpg');
+            }
+        }
+
+        @media (min-width: 768px) {
+            & {
+                width: 768px;
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-tablet-1x.jpg');
+            }
+        }
+
+        @media (min-width: 768px) and (min-device-pixel-ratio: 2),
+        (min-width: 768px) and (min-resolution: 192dpi),
+        (min-width: 768px) and (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-tablet-2x.jpg');
+            }
+        }
+
+        @media (min-width: 1200px) {
+            & {
+                width: 1200px;
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-desktop-1x.jpg');
+            }
+        }
+
+        @media (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        (min-width: 1200px) and (min-resolution: 192dpi),
+        (min-width: 1200px) and (min-resolution: 2dppx) {
+            & {
+                background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+                    url('../images/hero-desktop-2x.jpg');
+            }
         }
     }
-
-    @media (min-width: 768px) {
-        & {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero-tablet-1x.jpg');
-        }
-    }
-
-    @media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
-        & {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero-tablet-2x.jpg');
-        }
-    }
-
-    @media (min-width: 1200px) {
-        & {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero-desktop-1x.jpg');
-        }
-    }
-
-    @media (min-width: 1200px) and (min-device-pixel-ratio: 2), (min-width: 1200px) and (min-resolution: 192dpi), (min-width: 1200px) and (min-resolution: 2dppx) {
-        & {
-            background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-                url('../images/hero-desktop-2x.jpg');
-        }
-    }
-&__title {
-
-    color: var(--background-whight);
-    font-style: normal;
-    font-weight: 900;
-    font-size: 44px;
-    line-height: 1.4;
-    max-width: 696px;
-    margin: 0 auto;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
 }
-}
+
+
 
     
