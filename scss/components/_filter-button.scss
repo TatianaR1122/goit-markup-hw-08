@@ -33,19 +33,24 @@
 .filter {
 
     display: flex;
-    flex-direction: row;
+    // flex-direction: row;
     flex-wrap: wrap;
     row-gap: 15px;
     column-gap: 8px;
-    justify-content: start;
+    // justify-content: start;
     
-    margin-bottom: 46px;
-    width: 450px;
+    margin-bottom: 40px;
+    // width: 450px;
     
     @media (min-width: 768px) {
-        flex-wrap: nowrap;
-        min-width: max-content;
+        // flex-wrap: nowrap;
+        // min-width: max-content;
         justify-content: center;
-        width: 100%;
+        // width: 100%;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: 1200px) {
+        margin-bottom: 50px;
     }
 }
