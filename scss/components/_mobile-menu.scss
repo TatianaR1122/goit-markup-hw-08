@@ -77,7 +77,7 @@ z-index: 1;
 
         @media (max-width: 479px) {
             font-weight: 700;
-            font-size: 30px;
+            font-size: 25px;
         }
 
         }
@@ -85,6 +85,10 @@ z-index: 1;
     &__linked {
 
         margin-bottom: 270px;
+
+        @media (max-width: 479px) {
+           margin-bottom: 140px; 
+        }
         }
 
     &__pfone {
@@ -101,7 +105,7 @@ z-index: 1;
 
         @media (max-width: 479px) {
                 font-weight: 400;
-                font-size: 25px;
+                font-size: 20px;
             }
         }
 
@@ -119,6 +123,7 @@ z-index: 1;
 
         @media (max-width: 479px) {
                 font-weight: 400;
+                font-size: 20px;
                 padding-bottom: 32px;
             }
         }

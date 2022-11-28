@@ -1049,7 +1049,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 480px;
   width: 100%;
   background-color: var(--footer-background);
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-1x.jpg");
@@ -1062,13 +1061,7 @@ button {
 }
 @media (max-width: 767px) {
   .hero__overlay {
-    max-width: 480px;
     margin: 0 auto;
-  }
-}
-@media (min-width: 768px) and (max-width: 1199px) {
-  .hero__overlay {
-    max-width: 768px;
   }
 }
 @media (min-width: 1200px) {
@@ -1078,7 +1071,7 @@ button {
     height: 600px;
   }
 }
-@media (min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2) and (-webkit-min-device-pixel-ratio: 2), (min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (min-resolution: 2dppx) {
+@media (max-width: 767px) and (min-device-pixel-ratio: 2), (max-width: 767px) and (-webkit-min-device-pixel-ratio: 2), (max-width: 767px) and (min-resolution: 192dpi), (max-width: 767px) and (min-resolution: 2dppx) {
   .hero__overlay {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero-mobile-2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero-mobile-2x.jpg");
@@ -1173,6 +1166,12 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--background-whight);
+}
+
+.picture {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .logo {
@@ -1273,11 +1272,16 @@ button {
 @media (max-width: 479px) {
   .mobile-menu__link {
     font-weight: 700;
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .mobile-menu__linked {
   margin-bottom: 270px;
+}
+@media (max-width: 479px) {
+  .mobile-menu__linked {
+    margin-bottom: 140px;
+  }
 }
 .mobile-menu__pfone {
   display: -webkit-box;
@@ -1295,7 +1299,7 @@ button {
 @media (max-width: 479px) {
   .mobile-menu__pfone {
     font-weight: 400;
-    font-size: 25px;
+    font-size: 20px;
   }
 }
 .mobile-menu__mail {
@@ -1314,6 +1318,7 @@ button {
 @media (max-width: 479px) {
   .mobile-menu__mail {
     font-weight: 400;
+    font-size: 20px;
     padding-bottom: 32px;
   }
 }
